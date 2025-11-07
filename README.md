@@ -1,35 +1,52 @@
-# Real Estate Price Prediction Project
+# King County Houses Prediction with *ML*
+
+![Project Header](__rs/h1_compressed.jpg)
+
+[![Python](https://img.shields.io/badge/Python-3.12%2B-blue)]()
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.5%2B-orange)]()
+[![Pandas](https://img.shields.io/badge/Pandas-2.2%2B-red)]()
+[![Numpy](https://img.shields.io/badge/Numpy-1.26%2B-yellow)]()
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.9%2B-green)]()
+[![Seaborn](https://img.shields.io/badge/Seaborn-0.13%2B-lightgrey)]()
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)]()
+[![XGBoost](https://img.shields.io/badge/XGBoost-3.0%2B-darkgreen)]()
 
 ## Overview
 
-This project focuses on predicting real estate prices using machine learning techniques. The goal is to build an accurate regression model that can estimate property prices based on various features such as location, property characteristics, and market conditions. The project demonstrates a complete machine learning pipeline from data preprocessing to model deployment.
+This project focuses on predicting real estate prices from the King County, Seattle Houses dataset **[king_country_houses_aa](https://www.kaggle.com/datasets/minasameh55/king-country-houses-aa)** using machine learning techniques. The goal is to build an accurate regression model that can estimate property **prices** based on various features such as location, property characteristics, and market conditions.
 
-## Key Features
+> The project is not completed and we are trying to get an improved model furthermore
 
-- **Comprehensive Data Analysis**: Exploratory data analysis to understand relationships between variables
-- **Advanced Feature Engineering**: Creation of meaningful features from raw data
-- **Multiple Model Comparison**: Evaluation of various regression algorithms
-- **Hyperparameter Tuning**: Optimization using GridSearchCV for best performance
-- **Robust Model Selection**: XGBoost Regressor chosen for its outlier resistance
+This project explores different models:
 
-## Technologies Used
+1. Linear Regression
+2. Random Forest Regressor
+3. AdaBoost Regressor
+4. XGBoost Regressor
 
-### Programming & Data Analysis
-- **Python 3.8+**
-- **Pandas** - Data manipulation and analysis
-- **NumPy** - Numerical computations
-- **Matplotlib** - Data visualization
-- **Seaborn** - Statistical data visualization
+We decided to use XGBoost Regressor given its ability to handle outliers, its robustness when dealing with atypical values, and the significantly less effort required to achieve good results compared to using a standard regression model.
 
-### Machine Learning Libraries
-- **Scikit-learn** - Machine learning algorithms and utilities
-- **XGBoost** - Gradient boosting framework
-- **Category Encoders** - Encoding categorical variables
+## Project Description
 
-### Model Development
-- **Scikit-learn** - For traditional ML models (Linear Regression, Random Forest, etc.)
-- **XGBoost** - For advanced gradient boosting
-- **Joblib** - Model serialization and persistence
+### **Exploratory Data Analysis (EDA)**
+
+The input data is quite clean and no unusual values that need to be removed from our dataframe were found, but we encountered a problem that is probably the biggest challenge in our project: outliers in house prices.
+
+![Outliers 1](__rs/oyr1.png)
+
+### **Data Preprocessing and Cleaning**
+
+To handle these outliers, we decided to compress the original price values using logarithmic scaling and work with their logarithmic scale.
+
+![Outliers 2](__rs/oyr2.png)
+
+### **ML Model Training**
+
+We tested different models to establish a strong baseline, and this is why we opted for *XGBoost Regressor*. Even though *Random Forest Regressor* had better initial metrics, we know that *XGBoost Regressor* can deliver better results after feature engineering and tuning of both features and the model itself through hyperparameters.
+
+### **Evaluation and Metrics**
+
+![Model Comparison](__rs/copm1.png)
 
 ## Key Learning Points
 
@@ -39,7 +56,6 @@ This project focuses on predicting real estate prices using machine learning tec
 - **Polynomial Features**: Generation of interaction terms between important variables
 - **Binning**: Transformation of continuous variables into categorical ranges
 - **Domain-Specific Features**: Creation of property-specific metrics like price per square foot
-- **Missing Value Imputation**: Advanced strategies for handling NaN values
 
 ### Feature Selection
 - **Correlation Analysis**: Identification of highly correlated features for removal
@@ -47,17 +63,6 @@ This project focuses on predicting real estate prices using machine learning tec
 - **Feature Importance**: Using tree-based models to rank feature relevance
 - **Variance Threshold**: Removal of low-variance features
 - **Domain Knowledge**: Manual selection based on real estate expertise
-
-### Model Choice Rationale
-The project evaluated multiple algorithms:
-- **Linear Regression** - Baseline model
-- **Random Forest Regressor** - For handling non-linear relationships
-- **Gradient Boosting Regressor** - For sequential improvement
-- **XGBoost Regressor** - **Selected as final model** due to:
-  - Superior handling of outliers
-  - Built-in regularization to prevent overfitting
-  - Ability to capture complex patterns
-  - Consistent performance across validation sets
 
 ### Hyperparameter Tuning with GridSearch
 - **Systematic Search**: Exhaustive parameter combination testing
@@ -89,18 +94,74 @@ The model demonstrates strong predictive power while effectively handling the ch
 - Implementation of deep learning models
 - Development of ensemble methods
 
+## Project Structure
+```bash
+Project03_IronKaggle/
+├── __rs/ # readme resources
+│   ├── (many images) # many images lol
+├── data/
+│   ├── king_country_houses_aa.csv # raw dataset
+├── main.ipynb # main file
+├── presentation.pdf # presentation in PDF format
+├── README.md # current readme <:
+```
+
 ## Installation & Usage
 ```bash
 # Clone repository
 git clone https://github.com/iKebb/Ironhack-Project03_IronKaggle.git
 
-# Run training pipeline
-python src/main.ipynb
+# Run the main.ipynb
+python main.ipynb
+
+# No model exports yet
 ```
 
 ## Contributors
-- [Keberth José Rodríguez Albino]
-- [Rafael Rocha, Natasha Silvestre]
+
+<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+
+<a href="https://github.com/iKebb" style="text-decoration: none;">
+  <img src="https://avatars.githubusercontent.com/u/82987736?v=4" width="98" style="border-radius: 48px; border: 2px solid #ffffff;" title="Keberth José Rodríguez Albino">
+  <br>
+  <sub><b>Keberth</b></sub>
+</a>
+
+<a href="https://github.com/hitchcock9000" style="text-decoration: none;">
+  <img src="https://avatars.githubusercontent.com/u/210351622?v=4" width="98" style="border-radius: 48px; border: 2px solid #ffffff;" title="Natasha Silvestre">
+  <br>
+  <sub><b>Natasha</b></sub>
+</a>
+
+<a href="#" style="text-decoration: none;">
+  <img src="https://via.placeholder.com/98/ffffff/7289DA?text=⚪" width="98" style="border-radius: 48px; border: 2px solid #ffffff;" title="Rafael Rocha">
+  <br>
+  <sub><b>Rafael</b></sub>
+</a>
+
+</div>
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is free of license. Feell free to use it!
+
+## Contact
+
+- **Via E-mail** - [keberth12@gmail.com](mailto:keberth12@gmail.com)
+- **Via LinkedIn** - [Keberth José Rodríguez Albino](https://www.linkedin.com/in/keberth-josera-vkse1666)
+
+Repo link:
+
+[⠀⠀⠀⠀⠀⠀⣀⣤⡤](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⠀⠀⢀⣾⣿⠋](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⠀⣠⣾⣿⡟](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⢸⠛⠉⢹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠄⠠⣀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⡘⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠖⠉⠀⠀⠀⣾⣿⣦⡀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⡇⠀⠀⠀⢡⠄⠀⠀⣀⣀⣀⣠⠊⠀⠀⠀⠀⡠⠞⠛⠛⠛⠛⡀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⢃⠀⠀⠀⠀⠗⠚⠉⠉⠀⠈⠁⠀⠀⠀⢀⡔⠁⠀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⠸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶⣄⠲⡎](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⠀⠃⠀⠀⢠⣤⡀⠀⠀⠀⠀⣿⣿⣿⠀⠘⡄](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⠀⡆⠀⠀⣿⣿⡇⠀⠀⠀⠀⠈⠛⠉⣴⣆⢹⡄](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⠀⣇⢰⡧⣉⡉⠀⠀⢀⡀⠀⣀⣀⣠⣿⡷⢠⡇](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⠀⢻⠘⠃⠈⠻⢦⠞⠋⠙⠺⠋⠉⠉⠉⢡⠟](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
+[⠀⠀⠀⠀⠳⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠋⠀⠀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)
