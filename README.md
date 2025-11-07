@@ -1,6 +1,6 @@
-# King Country Houses Prediction with *ML*
+# King County Houses Prediction with *ML*
 
-![Project Header](__rs/h1_compressed.jpg)
+![Project Header](__rs/h1.png)
 >[Image Source](https://www.freepik.es/foto-gratis/manana-shanghai_26743766.htm#fromView=keyword&page=1&position=5&uuid=e79679d9-69b1-418d-b53a-caa9bf7e7b43&query=Panorama+city)
 
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue)]()
@@ -135,8 +135,8 @@ python main.ipynb
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/583231?v=4" width="100px;" alt="Rafael"/><br>
+      <a href="https://github.com/rafaeldr5150">
+        <img src="https://avatars.githubusercontent.com/u/236024727?v=4" width="100px;" alt="Rafael"/><br>
         <sub><b>Rafael</b></sub>
       </a>
     </td>
