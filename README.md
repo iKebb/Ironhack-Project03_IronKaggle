@@ -119,49 +119,36 @@ python main.ipynb
 
 ## Contributors
 
-<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-
-<a href="https://github.com/iKebb" style="text-decoration: none;">
-  <img src="https://avatars.githubusercontent.com/u/82987736?v=4" width="98" style="border-radius: 48px; border: 2px solid #ffffff;" title="Keberth José Rodríguez Albino">
-  <br>
-  <sub><b>Keberth</b></sub>
-</a>
-
-<a href="https://github.com/hitchcock9000" style="text-decoration: none;">
-  <img src="https://avatars.githubusercontent.com/u/210351622?v=4" width="98" style="border-radius: 48px; border: 2px solid #ffffff;" title="Natasha Silvestre">
-  <br>
-  <sub><b>Natasha</b></sub>
-</a>
-
-<a href="#" style="text-decoration: none;">
-  <img src="https://via.placeholder.com/98/ffffff/7289DA?text=⚪" width="98" style="border-radius: 48px; border: 2px solid #ffffff;" title="Rafael Rocha">
-  <br>
-  <sub><b>Rafael</b></sub>
-</a>
-
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/iKebb">
+        <img src="https://avatars.githubusercontent.com/u/82987736?v=4" width="100px;" alt="Keberth"/><br>
+        <sub><b>Keberth</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/hitchcock9000">
+        <img src="https://avatars.githubusercontent.com/u/210351622?v=4" width="100px;" alt="Natasha"/><br>
+        <sub><b>Natasha</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/583231?v=4" width="100px;" alt="Rafael"/><br>
+        <sub><b>Rafael</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## License
 
-This project is free of license. Feell free to use it!
+This project is free of license. Feel free to use it!
 
 ## Contact
 
 - **Via E-mail** - [keberth12@gmail.com](mailto:keberth12@gmail.com)
 - **Via LinkedIn** - [Keberth José Rodríguez Albino](https://www.linkedin.com/in/keberth-josera-vkse1666)
 
-Repo link:
-
-[⠀⠀⠀⠀⠀⠀⣀⣤⡤](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⠀⠀⢀⣾⣿⠋](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⠀⣠⣾⣿⡟](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⢸⠛⠉⢹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠄⠠⣀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⡘⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠖⠉⠀⠀⠀⣾⣿⣦⡀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⡇⠀⠀⠀⢡⠄⠀⠀⣀⣀⣀⣠⠊⠀⠀⠀⠀⡠⠞⠛⠛⠛⠛⡀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⢃⠀⠀⠀⠀⠗⠚⠉⠉⠀⠈⠁⠀⠀⠀⢀⡔⠁⠀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⠸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶⣄⠲⡎](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⠀⠃⠀⠀⢠⣤⡀⠀⠀⠀⠀⣿⣿⣿⠀⠘⡄](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⠀⡆⠀⠀⣿⣿⡇⠀⠀⠀⠀⠈⠛⠉⣴⣆⢹⡄](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⠀⣇⢰⡧⣉⡉⠀⠀⢀⡀⠀⣀⣀⣠⣿⡷⢠⡇](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⠀⢻⠘⠃⠈⠻⢦⠞⠋⠙⠺⠋⠉⠉⠉⢡⠟](https://github.com/iKebb/Ironhack-Project03_IronKaggle)  
-[⠀⠀⠀⠀⠳⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠋⠀⠀](https://github.com/iKebb/Ironhack-Project03_IronKaggle)
+Repo link: https://github.com/iKebb/Ironhack-Project03_IronKaggle
